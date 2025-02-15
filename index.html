@@ -25,7 +25,7 @@
       <div class="song-list" id="songList">
         <!-- Songs will be dynamically added here -->
       </div>
-      
+
       <!-- Music Player -->
       <div class="player">
         <div class="image-container">
@@ -34,9 +34,15 @@
         <h2 id="music-name">Song Name</h2>
         <h3 id="music-artist">Artist Name</h3>
 
-        <!-- Progress Bar -->
-        <div class="progress-area">
-          <div class="progress-bar"></div>
+        <!-- Progress Area Structure -->
+        <div class="progress-container">
+          <div class="time-info">
+            <span id="current-time">0:00</span>
+            <span id="total-duration">0:00</span>
+          </div>
+          <div class="progress-area">
+            <div class="progress-bar"></div>
+          </div>
         </div>
 
         <!-- Controls -->

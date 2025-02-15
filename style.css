@@ -1,129 +1,150 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    background: #1e1e1e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .wrapper {
-    width: 320px;
-    background: #2c2c2c;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 10px 10px 20px #1a1a1a, -10px -10px 20px #333;
-    text-align: center;
+  width: 320px;
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #1a1a1a, -10px -10px 20px #333;
+  text-align: center;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
 }
 
 .hdbtn {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .image-container {
-    margin: 20px auto;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: inset 10px 10px 20px #1a1a1a, inset -10px -10px 20px #333;
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: inset 10px 10px 20px #1a1a1a, inset -10px -10px 20px #333;
 }
 
 img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-h2, h3 {
-    color: #fff;
+h2,
+h3 {
+  color: #fff;
+}
+
+.progress-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 5px; /* Space above progress bar */
 }
 
 .progress-area {
-    width: 100%;
-    height: 5px;
-    background: #444;
-    margin: 15px 0;
-    border-radius: 5px;
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #444;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .progress-bar {
-    width: 0%;
-    height: 100%;
-    background: #ec4b0e;
-    border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 6px;
+  background: #ec4b0e;
+  width: 0%;
+  border-radius: 4px;
 }
 
 .controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .controls button {
-    background: none;
-    border: none;
-    font-size: 25px;
-    color: #fff;
-    cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
 }
 
 #play-pause {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: #ec4b0e;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ec4b0e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
 }
 
 .song-list {
-    position: absolute;
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 400px;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    display: none; /* Initially hidden */
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: none; /* Initially hidden */
 }
 
 .song-list ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .song-list li {
-    padding: 10px;
-    border-bottom: 1px solid #444;
-    color: #fff;
-    cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  color: #fff;
+  cursor: pointer;
 }
 
 .song-list li:hover {
-    background: #222;
+  background: #222;
 }
