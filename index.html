@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MHR-Music Player</title>
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <!-- Header -->
-        <header>
-            <button class="hdbtn"><i class="fi fi-sr-arrow-small-left"></i></button>
-            <h3>Now Playing</h3>
-            <button class="hdbtn"><i class="fi fi-sr-list"></i></button>
-        </header>
+      <!-- Header -->
+      <header>
+        <button class="hdbtn"><i class="fi fi-sr-arrow-small-left"></i></button>
+        <h3>Now Playing</h3>
+        <button class="hdbtn" id="toggle-list">
+          <i class="fi fi-sr-list"></i>
+        </button>
+      </header>
 
-        <!-- Music Player -->
-        <div class="player">
-            <div class="image-container">
-                <img id="music-image" src="images/default.jpg" alt="Album Art">
-            </div>
-            <h2 id="music-name">Song Name</h2>
-            <h3 id="music-artist">Artist Name</h3>
+      <!-- Hidden Song List -->
+      <div class="song-list" id="songList">
+        <!-- Songs will be dynamically added here -->
+      </div>
+      
+      <!-- Music Player -->
+      <div class="player">
+        <div class="image-container">
+          <img id="music-image" src="images/default.jpg" alt="Album Art" />
+        </div>
+        <h2 id="music-name">Song Name</h2>
+        <h3 id="music-artist">Artist Name</h3>
 
-            <!-- Progress Bar -->
-            <div class="progress-area">
-                <div class="progress-bar"></div>
-            </div>
-
-            <!-- Controls -->
-            <div class="controls">
-                <button id="prev"><i class="fi fi-sr-rewind"></i></button>
-                <button id="play-pause"><i class="fi fi-sr-play"></i></button>
-                <button id="next"><i class="fi fi-sr-forward"></i></button>
-            </div>
+        <!-- Progress Bar -->
+        <div class="progress-area">
+          <div class="progress-bar"></div>
         </div>
 
+        <!-- Controls -->
+        <div class="controls">
+          <button id="prev"><i class="fi fi-sr-rewind"></i></button>
+          <button id="play-pause"><i class="fi fi-sr-play"></i></button>
+          <button id="next"><i class="fi fi-sr-forward"></i></button>
+        </div>
+      </div>
+      <!-- Hidden Audio Element -->
+      <audio id="main-audio"></audio>
     </div>
 
-   
-</body>
+    <!-- Scripts -->
+    <script src="music_list.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

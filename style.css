@@ -96,3 +96,34 @@ h2, h3 {
     justify-content: center;
     font-size: 28px;
 }
+
+.song-list {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: none; /* Initially hidden */
+}
+
+.song-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.song-list li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    color: #fff;
+    cursor: pointer;
+}
+
+.song-list li:hover {
+    background: #222;
+}
